@@ -118,15 +118,18 @@
             <!-- Tournament Modal -->
             <div id="tournamentModal"
                 class="fixed inset-0 hidden z-50 bg-black bg-opacity-80 flex items-center justify-center px-4">
-                <div class="bg-white rounded-xl p-6 max-w-2xl w-full relative">
+                <div class="bg-white rounded-xl p-6 max-w-2xl w-full relative flex flex-col items-center">
                     <button onclick="closeModal()"
                         class="absolute top-2 right-4 text-black text-3xl font-bold z-50">&times;</button>
                     <img id="tournamentImage" class="w-full max-h-[80vh] object-contain rounded-lg mb-4 mx-auto" />
                     <p id="tournamentText" class="text-gray-900 text-xl font-semibold text-center px-4"></p>
+                    <button onclick="closeModal()"
+                        class="mt-6 px-6 py-2 bg-[#208581] text-white rounded-full text-sm font-semibold hover:bg-[#18685f] focus:outline-none">Close</button>
                 </div>
             </div>
 
     </section>
+
 
     <!-- Top Performers Section -->
     <section class="py-20 bg-[#289c81] text-white manrope">
@@ -315,7 +318,7 @@
         const playerData = {
             'Anas': {
                 image: './resources/anas.jpg',
-                text: 'Anas showed unmatched midfield control and made crucial assists in every major match.'
+                text: 'Anas showed unmatched midfield control, acting as a key playmaker and scoring in crucial matches.'
             },
              'Miraz': {
             image: './resources/miraz.jpg',
@@ -331,19 +334,19 @@
         },
         'Mir Eju': {
             image: './resources/mir.jpg',
-            text: 'Mir Eju consistently drove the team forward with passion, pace, and accurate long passes.'
+            text: 'Mir Eju consistently drove the team forward with passion, pace, and accurate long passes, showcasing his mastery as a midfield maestro and long-range expert.'
         },
         'Yusuf': {
             image: './resources/yusuf.jpg',
-            text: 'Yusuf played with great energy and stamina, constantly pressing and supporting both defense and attack.'
+            text: 'Yusuf played with great energy and stamina, constantly pressing and supporting both defense and attack with his trickster skills and magical feet.'
         },
         'Ishmam': {
             image: './resources/ishmam.jpg',
-            text: 'Ishmam brought flair and creativity in midfield, often unlocking defenses with sharp movement.'
+            text: 'Ishmam brought flair and creativity to the midfield, often unlocking defenses with sharp movement as a relentless box-to-box physical midfielder.'
         },
         'Torik': {
             image: './resources/torik.jpg',
-            text: 'Torik was reliable and smart in possession, creating key plays and tracking back when needed.'
+            text: 'Torik was a reliable and smart midfield maestro, expertly maintaining possession, creating key plays, and tracking back when needed.'
         },
 
         };
