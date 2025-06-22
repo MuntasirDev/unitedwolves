@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./resources/UW new.jpg" type="image/png" />
+  <title>Gallery - United Wolves</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fade-in {
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Manrope] bg-[#f8f9f1] text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-[#001f3f] shadow-md sticky top-0 z-50 backdrop-blur bg-opacity-90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="home.html">
+            <img class="h-10 w-auto" src="./resources/UW new.jpg" alt="United Wolves Logo">
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-[#289c81] font-bold text-base">
+          <a href="home.html" class="hover:text-gray-800 hover:bg-[#DBDFD0] px-3 py-1 rounded-full">Home</a>
+          <a href="players.html" class="hover:text-gray-800 hover:bg-[#DBDFD0] px-3 py-1 rounded-full">Players</a>
+          <a href="hall of fame.html" class="hover:text-gray-800 hover:bg-[#DBDFD0] px-3 py-1 rounded-full">Hall of Fame</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-[#289c81] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="home.html" class="block text-[#289c81] font-bold py-2 hover:text-gray-800 hover:bg-[#DBDFD0] px-3 rounded-full">Home</a>
+      <a href="players.html" class="block text-[#289c81] font-bold py-2 hover:text-gray-800 hover:bg-[#DBDFD0] px-3 rounded-full">Players</a>
+      <a href="hall of fame.html" class="block text-[#289c81] font-bold py-2 hover:text-gray-800 hover:bg-[#DBDFD0] px-3 rounded-full">Hall of Fame</a>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section class="py-16 text-center">
+    <h1 class="text-4xl font-bold text-[#208581] mb-10">Hall of Fame</h1>
+    <p class="text-lg max-w-2xl mx-auto mb-12">Explore memorable moments of United Wolves</p>
+
+    <div id="gallery" class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 px-4">
+      <!-- Same size image grid with hover zoom -->
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/Season4.jpg" alt="Season 4" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/21-5-25.jpg" alt="21 May 2025" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/bsafrndly.jpg" alt="BSA Friendly" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/intfrndly.jpg" alt="International Friendly" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/portfrndly.jpg" alt="Port Friendly" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/iiucfc-s2.jpg" alt="IIUC FC S2" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/pharmacy-cup.jpg" alt="Pharmacy Cup" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/iiucfcseason1.jpg" alt="IIUC FC S1" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md aspect-[4/3]">
+        <img src="./resources/season25.jpg" alt="Season 4" class="w-full h-full object-cover hover:scale-110 transition duration-300 ease-in-out" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-center bg-[#001f3f] text-white p-10 space-y-6">
+    <aside class="flex flex-col md:flex-row items-center justify-center md:justify-between max-w-7xl mx-auto w-full gap-6 md:gap-0">
+      <!-- Logo + Text -->
+      <div class="flex items-center space-x-4">
+        <img src="./resources/UW new.jpg" alt="United Wolves Logo" class="w-12 h-12 object-contain" />
+        <div class="text-left">
+          <p class="font-bold text-lg">United Wolves</p>
+          <p class="text-gray-300 text-sm">Built with Brotherhood</p>
+        </div>
+      </div>
+      <!-- Contact Info -->
+      <div class="text-center md:text-right space-y-2 text-sm max-w-xs md:max-w-none">
+        <p>📞 <a href="tel:+8801960551472" class="underline hover:text-[#208581]">01960551472</a>,
+          <a href="tel:+8801643698794" class="underline hover:text-[#208581]">01643698794</a>,
+          <a href="tel:+8801876956121" class="underline hover:text-[#208581]">01876956121</a>
+        </p>
+        <p>📧 <a href="mailto:alimuntasir2001@gmail.com" class="underline hover:text-[#208581]">alimuntasir2001@gmail.com</a></p>
+      </div>
+    </aside>
+
+    <!-- Center Message -->
+    <div class="text-center">
+      <h1 class="text-3xl font-extrabold mb-1">#UW05</h1>
+    </div>
+
+    <!-- Social Links -->
+    <nav class="flex justify-center space-x-6 text-white text-xl">
+      <a href="https://www.facebook.com/profile.php?id=61562870609109" target="_blank" class="hover:text-[#208581]">
+        <!-- FB Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M22.675 0h-21.35C.592 0 0 .592 0 1.325v21.351C0 23.408.592 24 1.325 24h11.49v-9.294h-3.12v-3.622h3.12v-2.671c0-3.097 1.892-4.788 4.658-4.788 1.325 0 2.466.099 2.797.142v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.312h3.59l-.467 3.622h-3.123V24h6.116c.732 0 1.324-.592 1.324-1.324V1.325C24 .592 23.408 0 22.675 0z"/></svg>
+      </a>
+      <a href="https://twitter.com/yourpage" target="_blank" class="hover:text-[#208581]">
+        <!-- Twitter Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M24 4.557a9.896 9.896 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.917 4.917 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.904 4.904 0 00-.666 2.475 4.917 4.917 0 002.188 4.096 4.9 4.9 0 01-2.228-.616c-.054 2.281 1.582 4.415 3.949 4.89a4.934 4.934 0 01-2.224.084 4.918 4.918 0 004.6 3.417A9.867 9.867 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646a10.025 10.025 0 002.457-2.549z"/></svg>
+      </a>
+      <a href="https://instagram.com/yourpage" target="_blank" class="hover:text-[#208581]">
+        <!-- Insta Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm4.25 2a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm6.25-.5a1 1 0 110 2 1 1 0 010-2z"/></svg>
+      </a>
+    </nav>
+
+    <!-- Developer Credit -->
+    <div class="text-center text-sm text-gray-400 mt-3">
+      Developed by <a href="https://muntasirdev.com" target="_blank" class="underline hover:text-[#208581]">MuntasirDev</a>
+    </div>
+  </footer>
+
+  <!-- JS for future interactions -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const galleryImages = document.querySelectorAll("#gallery img");
+      galleryImages.forEach(img => {
+        img.addEventListener("click", () => {
+          console.log("Clicked:", img.alt);
+          // Future enhancements like filter, modal, etc.
+        });
+      });
+    });
+
+    // Mobile menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
